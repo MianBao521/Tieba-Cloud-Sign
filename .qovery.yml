@@ -1,0 +1,15 @@
+---
+application:
+  name: "tieba"
+  project: "sign"
+  organization: "QoveryCommunity"
+databases:
+- type: "MYSQL"
+  name: "tieba"
+  version: "5.5"
+routers:
+- name: "main-tieba"
+  routes:
+  - application_name: "tieba"
+    paths:
+    - "/*"
